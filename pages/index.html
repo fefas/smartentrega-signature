@@ -4,6 +4,6 @@ permalink: /
 
 <ul>
 {% for user in site.data %}
-  <li><a href="/{{ user[1].id }}/">{{ user[1].name }}</a></li>
+  <li><a href="{{ user[1].id }}/">{{ user[1].name }}</a></li>
 {% endfor %}
 </ul>
