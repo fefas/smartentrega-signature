@@ -4,7 +4,16 @@
   </a>
 </p>
 
-<p style="font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; color: rgb(33, 33, 33); margin-bottom: 10px;"><span style="font-weight: bold; color: rgb(33, 33, 33); display: inline;" class="txt signature_name-target sig-hide">{{ site.data[page.tag].name }}</span> <span class="title-sep sep" style="display: inline;">/</span> <span style="color: rgb(33, 33, 33); display: inline;" class="txt signature_jobtitle-target sig-hide">{{ site.data[page.tag].role }}</span>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; color: rgb(33, 33, 33); margin-bottom: 10px;">
+  <span style="font-weight: bold; color: rgb(33, 33, 33); display: inline;" class="txt signature_name-target sig-hide">
+    {{ site.data[page.tag].name }}
+  </span>
+  {% if site.data[page.tag].role %}
+    <span class="title-sep sep" style="display: inline;">/</span>
+    <span style="color: rgb(33, 33, 33); display: inline;" class="txt signature_jobtitle-target sig-hide">
+      {{ site.data[page.tag].role }}
+    </span>
+  {% endif %}
 
 <span class="email-sep break" style="display: inline;"><br></span>
 
